@@ -118,344 +118,344 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accel" xml:space="preserve">
-    <value>Accel</value>
+    <value>Kiihdyttää</value>
   </data>
   <data name="Action" xml:space="preserve">
-    <value>Action</value>
+    <value>Toiminta</value>
   </data>
   <data name="AddDirectory" xml:space="preserve">
-    <value>Add Directory</value>
+    <value>Lisää Sanakirja</value>
   </data>
   <data name="AddPrograms" xml:space="preserve">
-    <value>Add Programs</value>
+    <value>Lisää Ohjelmia</value>
   </data>
   <data name="AddStartMenuPrograms" xml:space="preserve">
-    <value>Add Start Menu Programs</value>
+    <value>Lisää Käynnistä-valikko Ohjelmat</value>
   </data>
   <data name="AddSteamGames" xml:space="preserve">
-    <value>Add Steam Games</value>
+    <value>Lisää Steam-pelejä</value>
   </data>
   <data name="All" xml:space="preserve">
-    <value>All</value>
+    <value>Kaikki</value>
   </data>
   <data name="AutoProfiles" xml:space="preserve">
-    <value>Auto Profiles</value>
+    <value>Autoprofiilit</value>
   </data>
   <data name="Battery" xml:space="preserve">
-    <value>Battery</value>
+    <value>Akku</value>
   </data>
   <data name="Browse" xml:space="preserve">
-    <value>Browse</value>
+    <value>Selaa</value>
   </data>
   <data name="BrowseOtherPrograms" xml:space="preserve">
-    <value>Browse for Other Programs</value>
+    <value>Selaa muita ohjelmia</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Peruuttaa</value>
   </data>
   <data name="CheckUpdateNow" xml:space="preserve">
-    <value>Check For Update Now</value>
+    <value>Tarkista Päivitys Nyt</value>
   </data>
   <data name="CheckUpdateStartup" xml:space="preserve">
-    <value>Check for updates at DS4Windows startup</value>
+    <value>Tarkista päivitykset DS4Windowsin käynnistyksen yhteydessä</value>
   </data>
   <data name="Clear" xml:space="preserve">
-    <value>Clear</value>
+    <value>Asia selvä</value>
   </data>
   <data name="CloseMinimizes" xml:space="preserve">
-    <value>Close Minimizes</value>
+    <value>Sulje Minimoi</value>
   </data>
   <data name="Color" xml:space="preserve">
-    <value>Color</value>
+    <value>Väri</value>
   </data>
   <data name="Controller1Text" xml:space="preserve">
-    <value>Controller 1</value>
+    <value>Ohjain 1</value>
   </data>
   <data name="Controller2Text" xml:space="preserve">
-    <value>Controller 2</value>
+    <value>Ohjain 2</value>
   </data>
   <data name="Controller3Text" xml:space="preserve">
-    <value>Controller 3</value>
+    <value>Ohjain 3</value>
   </data>
   <data name="Controller4Text" xml:space="preserve">
-    <value>Controller 4</value>
+    <value>Ohjain 4</value>
   </data>
   <data name="Controllers" xml:space="preserve">
-    <value>Controllers</value>
+    <value>Ohjaimet</value>
   </data>
   <data name="ControlPanel" xml:space="preserve">
-    <value>Control Panel</value>
+    <value>Ohjauspaneeli</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Poistaa</value>
   </data>
   <data name="DriverSetup" xml:space="preserve">
-    <value>Controller/Driver Setup</value>
+    <value>Ohjaimen/ohjaimen Asetukset</value>
   </data>
   <data name="Duplicate" xml:space="preserve">
-    <value>Duplicate</value>
+    <value>Kopioi</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Muokata</value>
   </data>
   <data name="EditAction" xml:space="preserve">
-    <value>Edit Action</value>
+    <value>Muokkaa Toimintoa</value>
   </data>
   <data name="Export" xml:space="preserve">
-    <value>Export</value>
+    <value>Viedä</value>
   </data>
   <data name="Full" xml:space="preserve">
-    <value>Full</value>
+    <value>Koko</value>
   </data>
   <data name="Gyro" xml:space="preserve">
     <value>Gyro</value>
   </data>
   <data name="HideUnchecked" xml:space="preserve">
-    <value>Hide Unchecked</value>
+    <value>Piilota Valitsematon</value>
   </data>
   <data name="Import" xml:space="preserve">
-    <value>Import</value>
+    <value>Tuonti</value>
   </data>
   <data name="LeftStick" xml:space="preserve">
-    <value>Left Stick</value>
+    <value>Vasen Tikku</value>
   </data>
   <data name="Log" xml:space="preserve">
-    <value>Log</value>
+    <value>Lokikirja</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nimi</value>
   </data>
   <data name="New" xml:space="preserve">
-    <value>New</value>
+    <value>Uusi</value>
   </data>
   <data name="NewAction" xml:space="preserve">
-    <value>New Action</value>
+    <value>Uusi Toiminta</value>
   </data>
   <data name="NewProfile" xml:space="preserve">
-    <value>New Profile</value>
+    <value>Uusi Profiili</value>
   </data>
   <data name="None" xml:space="preserve">
-    <value>None</value>
+    <value>Ei mitään</value>
   </data>
   <data name="Path" xml:space="preserve">
-    <value>Path</value>
+    <value>Polku</value>
   </data>
   <data name="Profile" xml:space="preserve">
-    <value>Profile</value>
+    <value>Profiili</value>
   </data>
   <data name="ProfileFolder" xml:space="preserve">
-    <value>Profile Folder</value>
+    <value>Profiilikansio</value>
   </data>
   <data name="QuickCharge" xml:space="preserve">
-    <value>Quick Charge</value>
+    <value>Pikalataus</value>
   </data>
   <data name="RecordText" xml:space="preserve">
-    <value>Record</value>
+    <value>Ennätys</value>
   </data>
   <data name="Remove" xml:space="preserve">
-    <value>Remove</value>
+    <value>Poista</value>
   </data>
   <data name="RemoveAction" xml:space="preserve">
-    <value>Remove Action</value>
+    <value>Poista Toiminto</value>
   </data>
   <data name="RightStick" xml:space="preserve">
-    <value>Right Stick</value>
+    <value>Oikea tikku</value>
   </data>
   <data name="Rumble" xml:space="preserve">
     <value>Rumble</value>
   </data>
   <data name="RunAtStartup" xml:space="preserve">
-    <value>Run At Startup</value>
+    <value>Suorita käynnistyksen yhteydessä</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>Tallentaa</value>
   </data>
   <data name="SaveProfile" xml:space="preserve">
-    <value>Save</value>
+    <value>Tallentaa</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Asetukset</value>
   </data>
   <data name="ShowNotifications" xml:space="preserve">
-    <value>Show Notifications</value>
+    <value>Näytä Ilmoitukset</value>
   </data>
   <data name="StartMinimized" xml:space="preserve">
-    <value>Start Minimized</value>
+    <value>Aloita Minimoitu</value>
   </data>
   <data name="StartText" xml:space="preserve">
-    <value>Start</value>
+    <value>Alkaa</value>
   </data>
   <data name="Status" xml:space="preserve">
-    <value>Status</value>
+    <value>Tila</value>
   </data>
   <data name="StopText" xml:space="preserve">
-    <value>Stop</value>
+    <value>Lopettaa</value>
   </data>
   <data name="TouchScroll" xml:space="preserve">
-    <value>Scroll</value>
+    <value>Selaa</value>
   </data>
   <data name="TouchSlide" xml:space="preserve">
-    <value>Slide</value>
+    <value>Liuku</value>
   </data>
   <data name="TouchTap" xml:space="preserve">
-    <value>Tap</value>
+    <value>Napauta</value>
   </data>
   <data name="Trigger" xml:space="preserve">
-    <value>Trigger</value>
+    <value>Laukaista</value>
   </data>
   <data name="WarningsOnly" xml:space="preserve">
-    <value>Warnings only</value>
+    <value>Vain varoitukset</value>
   </data>
   <data name="RumbleMaxSecs" xml:space="preserve">
-    <value>sec</value>
+    <value>sek</value>
   </data>
   <data name="RumbleMaxSecsTip" xml:space="preserve">
-    <value>Auto stop rumble in secs (0=auto stop disabled)</value>
+    <value>Automaattinen pysäytys jyrinä sekunneissa (0 = automaattinen pysäytys poissa käytöstä)</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
-    <value>Window Title</value>
+    <value>Ikkunan Otsikko</value>
   </data>
   <data name="MoveUp" xml:space="preserve">
-    <value>Move Up</value>
+    <value>Liiku ylös</value>
   </data>
   <data name="MoveDown" xml:space="preserve">
-    <value>Move Down</value>
+    <value>Siirrä alas</value>
   </data>
   <data name="AutoProfPathTip" xml:space="preserve">
-    <value>Process path. ^ABC = Match at the beginning of string (^) | ABC$ = Match at the end of string ($) | *ABC =Contains a string (*)</value>
+    <value>Prosessin polku. ^ABC = Vastaa merkkijonon alussa (^) | ABC$ = Vastaa merkkijonon lopussa ($) | *ABC =Sisältää merkkijonon (*)</value>
   </data>
   <data name="AutoProfTitleTip" xml:space="preserve">
-    <value>Window title. ^ABC = Match at the beginning of string (^) | ABC$ = Match at the end of string ($) | *ABC =Contains a string (*)</value>
+    <value>Ikkunan otsikko. ^ABC = Vastaa merkkijonon alussa (^) | ABC$ = Vastaa merkkijonon lopussa ($) | *ABC =Sisältää merkkijonon (*)</value>
   </data>
   <data name="GamepadTest" xml:space="preserve">
-    <value>Gamepad Test</value>
+    <value>Peliohjaimen testi</value>
   </data>
   <data name="EnableOutputDataToDS4" xml:space="preserve">
-    <value>Enable Output data to DS4</value>
+    <value>Ota käyttöön Output data to DS4</value>
   </data>
   <data name="EnableOutputDataToDS4Tip" xml:space="preserve">
-    <value>Output lightbar and rumble data periodically to DS4 gamepad. Untick if the gamepad doesn't support data receiving.
-Changes to this option takes effect at the gamepad connection time.</value>
-    <comment>To enter a line break into a string resource value in VisualStudio resource editor press Shift+Enter.</comment>
+    <value>Lähetä valopalkki- ja rumble-tiedot ajoittain DS4-peliohjaimeen. Poista valinta, jos peliohjain ei tue tiedon vastaanottamista.
+Muutokset tähän asetukseen tulevat voimaan peliohjaimen yhteyden aikana.</value>
+    <comment>Jos haluat kirjoittaa rivinvaihdon merkkijonoresurssiarvoon VisualStudio-resurssieditorissa, paina Vaihto+Enter.</comment>
   </data>
   <data name="Apply" xml:space="preserve">
-    <value>Apply</value>
+    <value>Käytä</value>
   </data>
   <data name="HidNinja" xml:space="preserve">
     <value>HidNinja</value>
   </data>
   <data name="CustomExeName" xml:space="preserve">
-    <value>Custom Exe Name</value>
+    <value>Mukautettu Exe-nimi</value>
   </data>
   <data name="CustomExeNameInfo" xml:space="preserve">
-    <value>Some games implement a block that causes DS4 input to be ignored if a game detects either DS4Windows.exe or InputMapper.exe running at the time. A workaround to the block is to rename DS4Windows.exe so the check in the game fails. Specifying a custom exe name here allows DS4Updater to automatically update a custom copy of DS4Windows to the desired file name. Make sure to omit the extension.
+    <value>Jotkut pelit toteuttavat lohkon, joka ohittaa DS4-syötteen, jos peli havaitsee joko DS4Windows.exe- tai InputMapper.exe-tiedoston sillä hetkellä käynnissä. Kiertokeino estoon on nimetä DS4Windows.exe uudelleen, jotta pelin tarkistus epäonnistuu. Kun määrität mukautetun exe-nimen tässä, DS4Updater voi päivittää mukautetun DS4Windows-kopion automaattisesti haluttuun tiedostonimeen. Muista jättää laajennus pois.
 
-Example: whyme_DS4Windows</value>
+Esimerkki: Whyme_DS4Windows</value>
   </data>
   <data name="XInputChecker" xml:space="preserve">
     <value>XInputChecker</value>
   </data>
   <data name="Controller5Text" xml:space="preserve">
-    <value>Controller 5</value>
+    <value>Ohjain 5</value>
   </data>
   <data name="Controller6Text" xml:space="preserve">
-    <value>Controller 6</value>
+    <value>Ohjain 6</value>
   </data>
   <data name="Controller7Text" xml:space="preserve">
-    <value>Controller 7</value>
+    <value>Ohjain 7</value>
   </data>
   <data name="Controller8Text" xml:space="preserve">
-    <value>Controller 8</value>
+    <value>Ohjain 8</value>
   </data>
   <data name="GamepadGyroCameraDescription" xml:space="preserve">
-    <value>Maps the controller output to a standard XInput gamepad or DS4 pad. Gyro is mapped to a Mouse-like Joystick.</value>
+    <value>Yhdistää ohjaimen ulostulon tavalliseen XInput-peliohjaimeen tai DS4-padiin. Gyro on kartoitettu hiiren kaltaiseen joystickiin.</value>
   </data>
   <data name="GamepadGyroCameraName" xml:space="preserve">
-    <value>Gamepad with Mouse-like Joystick</value>
+    <value>Peliohjain hiiren kaltaisella joystickillä</value>
   </data>
   <data name="GamepadPresetDescription" xml:space="preserve">
-    <value>Maps the controller output to a standard gamepad</value>
+    <value>Yhdistää ohjaimen ulostulon tavalliseen peliohjaimeen</value>
   </data>
   <data name="GamepadPresetName" xml:space="preserve">
-    <value>Gamepad</value>
+    <value>Peliohjain</value>
   </data>
   <data name="KBMGyroMouseDescription" xml:space="preserve">
-    <value>Maps the controller output to virtual KB+M controls. Useful for playing FPS games with no gamepad support. Gyro is mapped to a virtual Mouse.</value>
+    <value>Yhdistää ohjaimen lähdön virtuaalisiin KB+M-säätimiin. Hyödyllinen FPS-pelien pelaamiseen ilman peliohjaintukea. Gyro on kartoitettu virtuaaliseen hiireen.</value>
   </data>
   <data name="KBMGyroMouseName" xml:space="preserve">
-    <value>KB+M Controls with Gyro Mouse</value>
+    <value>KB+M-ohjaimet Gyro Mouse -hiirellä</value>
   </data>
   <data name="KBMPresetDescription" xml:space="preserve">
-    <value>Maps the controller output to virtual KB+M controls. Useful for playing FPS games with no gamepad support.</value>
+    <value>Yhdistää ohjaimen lähdön virtuaalisiin KB+M-säätimiin. Hyödyllinen FPS-pelien pelaamiseen ilman peliohjaintukea.</value>
   </data>
   <data name="KBMPresetName" xml:space="preserve">
-    <value>KB+M Controls</value>
+    <value>KB+M-säätimet</value>
   </data>
   <data name="MixedGyroMousePresetDescription" xml:space="preserve">
-    <value>Maps the buttons and axes to a standard gamepad. Maps the Gyro to a virtual mouse</value>
+    <value>Yhdistää painikkeet ja akselit tavalliseen peliohjaimeen. Karttaa Gyron virtuaalihiireen</value>
   </data>
   <data name="MixedGyroMousePresetName" xml:space="preserve">
-    <value>Gamepad with Gyro Mouse</value>
+    <value>Peliohjain Gyro Mouse -hiirellä</value>
   </data>
   <data name="MixedPresetDescription" xml:space="preserve">
-    <value>Maps the controller output to mixed XInput gamepad + RS mouse.</value>
+    <value>Yhdistää ohjaimen ulostulon sekoitettuun XInput-peliohjaimeen + RS-hiireen.</value>
   </data>
   <data name="MixedPresetName" xml:space="preserve">
-    <value>Gamepad with High Precision Camera</value>
+    <value>Peliohjain korkean tarkkuuden kameralla</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>Kuvaus</value>
   </data>
   <data name="PresetIntroText" xml:space="preserve">
-    <value>Do you want to use a preset option? Choosing No will cause the Profile Editor to use an empty Gamepad profile.</value>
+    <value>Haluatko käyttää esiasetettua vaihtoehtoa? Jos valitset Ei, profiilieditori käyttää tyhjää Gamepad-profiilia.</value>
   </data>
   <data name="Presets" xml:space="preserve">
-    <value>Presets</value>
+    <value>Esiasetukset</value>
   </data>
   <data name="Changelog" xml:space="preserve">
-    <value>Changelog</value>
+    <value>Muutosloki</value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>Close</value>
+    <value>Kiinni</value>
   </data>
   <data name="Profiles" xml:space="preserve">
-    <value>Profiles</value>
+    <value>Profiilit</value>
   </data>
   <data name="NoControllersConnected" xml:space="preserve">
-    <value>No Controllers Connected (Max {0})</value>
+    <value>Ei ohjaimia kytkettynä (enintään {0})</value>
   </data>
   <data name="FlickThreshold" xml:space="preserve">
-    <value>Flick Threshold</value>
+    <value>Pyyhkäisykynnys</value>
   </data>
   <data name="FlickTime" xml:space="preserve">
-    <value>Flick Time</value>
+    <value>Flip-aika</value>
   </data>
   <data name="MinAngleThreshold" xml:space="preserve">
-    <value>Min Angle Threshold</value>
+    <value>Minimikulman kynnys</value>
   </data>
   <data name="RealWorldCalibration" xml:space="preserve">
-    <value>Real World Calibration</value>
+    <value>Tosimaailman kalibrointi</value>
   </data>
   <data name="ViGEmPluginFailure" xml:space="preserve">
-    <value>ViGEm Device Plugin Failed. Likely an internal ViGEmBus problem. Closing connection. If the issue persists, please close DS4Windows and then reboot Windows.</value>
+    <value>ViGEm Device Plugin epäonnistui. Todennäköisesti sisäinen ViGEmBus-ongelma. Yhteyden sulkeminen. Jos ongelma jatkuu, sulje DS4Windows ja käynnistä Windows uudelleen.</value>
   </data>
   <data name="CRC32Fail" xml:space="preserve">
-    <value>Data integrity checks failed for wireless device. Closing device.</value>
+    <value>Langattoman laitteen tietojen eheystarkistukset epäonnistuivat. Sulkeva laite.</value>
   </data>
   <data name="FutureNetNotInstalled" xml:space="preserve">
-    <value>.NET 5 Runtime was not detected on your system. Please download and install .NET 5 Runtime to ensure compatibility with future DS4Windows builds. You will be redirected to the .NET 5 Runtime download page upon closing this window.</value>
+    <value>.NET 5 Runtimea ei havaittu järjestelmästäsi. Lataa ja asenna .NET 5 Runtime varmistaaksesi yhteensopivuuden tulevien DS4Windows-versioiden kanssa. Sinut ohjataan .NET 5 Runtime -lataussivulle, kun suljet tämän ikkunan.</value>
   </data>
   <data name="UpgradeNetCaption" xml:space="preserve">
-    <value>Please update .NET Runtime</value>
+    <value>Päivitä .NET Runtime</value>
   </data>
   <data name="HidHide" xml:space="preserve">
-    <value>HidHide</value>
+    <value>HidPiilota</value>
   </data>
   <data name="HidHideConfigClient" xml:space="preserve">
     <value>HidHide Configuration Client</value>
   </data>
   <data name="ExclusiveAccess" xml:space="preserve">
-    <value>Exclusive Access</value>
+    <value>Ainutlaatuinen pääsy</value>
   </data>
   <data name="HidGuardianAccess" xml:space="preserve">
     <value>HidGuardian Access</value>
@@ -464,336 +464,282 @@ Example: whyme_DS4Windows</value>
     <value>HidHide Access</value>
   </data>
   <data name="SharedAccess" xml:space="preserve">
-    <value>Shared Access</value>
+    <value>Jaettu käyttöoikeus</value>
   </data>
   <data name="RenameProfile" xml:space="preserve">
-    <value>Rename</value>
+    <value>Nimeä uudelleen</value>
   </data>
   <data name="DisableVirtualController" xml:space="preserve">
-    <value>Disable virtual controller</value>
+    <value>Poista virtuaaliohjain käytöstä</value>
   </data>
   <data name="DisableVirtualControllerTip" xml:space="preserve">
-    <value>Do not spawn/associate virtual controllers for connected controllers using this profile (Applies on profile save)</value>
+    <value>Älä luo/liitä virtuaalisia ohjaimia tätä profiilia käyttäville liitetyille ohjaimille (koskee profiilin tallennusta)</value>
   </data>
   <data name="EmulatedController" xml:space="preserve">
-    <value>Emulated Controller</value>
+    <value>Emuloitu ohjain</value>
   </data>
   <data name="OutContNotice" xml:space="preserve">
-    <value>Choose the type of output virtual controller (Applies on profile save)</value>
+    <value>Valitse virtuaalisen lähtöohjaimen tyyppi (koskee profiilin tallennusta)</value>
   </data>
   <data name="VirtualControllerSettings" xml:space="preserve">
-    <value>Virtual Controller Settings</value>
+    <value>Virtuaaliohjaimen asetukset</value>
   </data>
   <data name="ChangeOnNewDeviceConn" xml:space="preserve">
-    <value>Changes take effect on new device connection</value>
+    <value>Muutokset astuvat voimaan uuden laitteen yhteydessä</value>
   </data>
   <data name="StickFuzzTooltip" xml:space="preserve">
-    <value>Fuzz specifies the minimum number of units the analog stick moves, in active zone, before the output is registered as changed in the mapper. This setting can be useful for worn sticks that cannot maintain a constant position. The value is expressed in raw stick units.</value>
+    <value>Fuzz määrittää minimimäärän yksiköitä, joita analoginen sauva liikkuu aktiivisella alueella, ennen kuin tulos rekisteröidään muuttuneeksi kartoittimessa. Tämä asetus voi olla hyödyllinen kuluneille sauvoille, jotka eivät pysty säilyttämään vakioasentoa. Arvo ilmaistaan ​​raakatikkuyksiköinä.</value>
   </data>
   <data name="StickMaxOutputForceTooltip" xml:space="preserve">
-    <value>Always enforce max output setting. Useful for 100% Max Output and confining value to a circular output value</value>
+    <value>Käytä aina maksimitehoasetusta. Hyödyllinen 100 % maksimiteholle ja arvon rajoittamiseksi pyöreään lähtöarvoon</value>
   </data>
   <data name="StickMaxOutputTooltip" xml:space="preserve">
-    <value>In some situations, it might be useful to limit the maximum value that is output by the output analog stick. Max Output allows throttling the final output value of the analog stick.</value>
+    <value>Joissakin tilanteissa saattaa olla hyödyllistä rajoittaa analogisen lähtötikun antamaa maksimiarvoa. Max Output mahdollistaa analogisen tikun lopullisen lähtöarvon kuristamisen.</value>
   </data>
   <data name="AntiDeadzoneTooltip" xml:space="preserve">
-    <value>An anti-deadzone acts as an offset for use with an axis to denote the minimum output value generated after an axis has left its assigned deadzone. This is mainly meant to help with mapping an axis to the assigned deadzone value used for an axis in a video game. For example, the typical assigned deadzone for XInput LS in a video game is around 8000 (25%). With no anti-deadzone assigned, an axis would have to move past the assigned deadzone in DS4Windows along with the game's assigned axis deadzone.</value>
+    <value>Anti-kuollut alue toimii siirtymänä käytettäväksi akselin kanssa osoittamaan minimilähtöarvoa, joka syntyy sen jälkeen, kun akseli on poistunut sille määrätystä kuollut alueesta. Tämä on tarkoitettu lähinnä auttamaan akselin kartoittamisessa määritettyyn kuollut aluearvoon, jota käytetään akselille videopelissä. Esimerkiksi tyypillinen määritetty kuollut alue XInput LS:lle videopelissä on noin 8000 (25 %). Jos anti-deadzone-aluetta ei ole määritetty, akselin on siirrettävä määrätyn kuollut alueen ohi DS4Windowsissa yhdessä pelille määritetyn akselin kuollutalueen kanssa.</value>
   </data>
   <data name="StickInputCurveTooltip" xml:space="preserve">
-    <value>OLD OBSOLETE SETTING. Attempt to apply a curve based on raw input coordinates before any dead zone info is applied. Wonky</value>
+    <value>VANHA VANNETTU ASETUS. Yritä käyttää käyrää, joka perustuu raakatulokoordinaatteihin, ennen kuin kuolleiden vyöhykkeiden tietoja käytetään. Hutera</value>
   </data>
   <data name="TouchpadMinThresholdTooltip" xml:space="preserve">
-    <value>Minimum calculated output travel before a Mouse event is sent to the system</value>
+    <value>Pienin laskettu lähtömatka ennen Mouse-tapahtuman lähettämistä järjestelmään</value>
   </data>
   <data name="TouchpadRotationTooltip" xml:space="preserve">
-    <value>Adjusts a touchpad swipe by a given rotation angle. Useful when a normal touchpad swipe is not a straight line across. Values allows range from -180 to 180. Default is 0.</value>
+    <value>Säätää kosketuslevyn pyyhkäisyä tietyllä kiertokulmalla. Hyödyllinen, kun normaali kosketuslevyn pyyhkäisy ei ole suora viiva. Sallitut arvot vaihtelevat välillä -180 - 180. Oletus on 0.</value>
   </data>
   <data name="TouchpadSlideTooltip" xml:space="preserve">
-    <value>Sensitivity used to engage a multi-touch Mouse Wheel Scroll action</value>
+    <value>Herkkyys, jota käytetään usean kosketuksen hiiren rullan vieritystoimintoon</value>
   </data>
   <data name="TouchpadTapTooltip" xml:space="preserve">
-    <value>Activate Mouse Left click with a Touchpad Tap. Max time interval is set at (value * 2) ms.</value>
+    <value>Aktivoi hiiren vasen painike kosketuslevyn napauttamalla. Suurin aikaväli on asetettu (arvo * 2) ms.</value>
   </data>
   <data name="TouchpadTrackballEnableTooltip" xml:space="preserve">
-    <value>Adds momentum to a Touchpad swipe once a finger is lifted. Adds extra Mouse cursor travel than would be possible with the confined space on the Touchpad</value>
+    <value>Lisää vauhtia kosketuslevyn pyyhkäisyyn, kun sormi nostetaan. Lisää hiiren osoittimen liikkumista enemmän kuin olisi mahdollista kosketuslevyn ahtaissa tiloissa</value>
   </data>
   <data name="TouchpadTrackballFrictionTooltip" xml:space="preserve">
-    <value>Add friction to virtual Trackball. Decreased friction will increase final mouse cursor travel time</value>
+    <value>Lisää kitkaa virtuaaliseen ohjauspalloon. Pienentynyt kitka lisää lopullista hiiren kursorin kulkuaikaa</value>
   </data>
   <data name="StickOuterBindDeadTooltip" xml:space="preserve">
-    <value>Threshold for when an action will fire</value>
+    <value>Kynnys, jolloin toiminto käynnistyy</value>
   </data>
   <data name="StickOuterBindInvertTooltip" xml:space="preserve">
-    <value>Have outer bind fire before reaching a threshold. Action releases once the threshold has been exceeded</value>
+    <value>Säilytä ulkoinen tulipalo ennen kynnyksen saavuttamista. Toiminto vapautuu, kun kynnys on ylitetty</value>
   </data>
   <data name="StickOuterBindTooltip" xml:space="preserve">
-    <value>Action to execute when stick travel reaches past a treshold. Useful for mapping keys for Walk or Sprint actions. Invert casues the action to fire up until the threshold</value>
+    <value>Suoritettava toiminto, kun sauvan liike ylittää kynnyksen. Hyödyllinen Walk- tai Sprint-toimintojen näppäinten kartoittamiseen. Käänteinen saa toiminnon käynnistymään kynnykseen asti</value>
   </data>
   <data name="SASteeringWheelFuzzTooltip" xml:space="preserve">
-    <value>Fuzz specifies the minimum number of device units, in active zone, that the Accel has to be rotated before the output is registered as changed in the mapper. The value is expressed in raw Accel units.</value>
+    <value>Fuzz määrittää laitteen yksiköiden vähimmäismäärän aktiivisella vyöhykkeellä, jota Accel on käännettävä ennen kuin tulos rekisteröidään muuttuneeksi kartoittimessa. Arvo ilmaistaan ​​raakana Accel-yksiköinä.</value>
   </data>
   <data name="StickRotationTooltip" xml:space="preserve">
-    <value>+ = Clockwise. - = Counter-clockwise.
+    <value>+ = myötäpäivään. - = Vastapäivään.
 
-The rotation setting is meant to help correct the orientation of an analog stick if your thumb is slightly shifted when moving an analog stick. For example, your thumb might be slightly shifted from center when the analog stick is moved fully north. My thumbs shift slightly to the right when moving an analog stick fully north due to the way my hands grip the DS4. The value used denotes the number of degrees used to adjust the final axis output value. Values allows range from -180 to 180. Default is 0.</value>
+Kiertoasetuksen tarkoituksena on auttaa korjaamaan analogisen sauvan suuntaa, jos peukaloasi on hieman siirtynyt analogista sauvaa liikuttaessa. Esimerkiksi peukaloasi saattaa siirtyä hieman keskustasta, kun analoginen sauva siirretään kokonaan pohjoiseen. Peukaloni siirtyvät hieman oikealle siirtäessäni analogista sauvaa kokonaan pohjoiseen, koska käteni pitävät DS4:stä kiinni. Käytetty arvo ilmaisee akselin lopullisen lähtöarvon säätämiseen käytettyjen asteiden lukumäärän. Sallitut arvot vaihtelevat välillä -180 - 180. Oletus on 0.</value>
   </data>
   <data name="TouchpadJitterCompTooltip" xml:space="preserve">
-    <value>Throttle low end of Touchpad movement. Reduces accidental mouse cursor movement when holding a mostly fixed position on the Touchpad</value>
+    <value>Kosketuslevyn liikkeen kaasutus. Vähentää vahingossa tapahtuvaa hiiren kohdistimen liikettä, kun kosketuslevyä pidetään enimmäkseen kiinteässä asennossa</value>
   </data>
   <data name="DS4BTPollRate" xml:space="preserve">
     <value>DS4 BT Poll Rate</value>
   </data>
   <data name="DS4LightbarPassthruDisabled" xml:space="preserve">
-    <value>Feature currently disabled in app due to driver issues. Hopefully issues get fixed in a future update.</value>
+    <value>Ominaisuus on tällä hetkellä poistettu käytöstä sovelluksessa ajuriongelmien vuoksi. Toivottavasti ongelmat korjataan tulevassa päivityksessä.</value>
   </data>
   <data name="DualSRumbleForceGenericRescale" xml:space="preserve">
-    <value>Force usage of both % strength levels (General and DualSense specifc)</value>
+    <value>Molempien prosenttiosuuksien voimankäyttö (yleinen ja DualSense-kohtainen)</value>
   </data>
   <data name="DualSRumbleModeDisabled" xml:space="preserve">
-    <value>Disabled</value>
+    <value>Liikuntarajoitteinen</value>
   </data>
   <data name="DualSRumbleModeAccurate" xml:space="preserve">
-    <value>Accurate</value>
+    <value>Tarkka</value>
   </data>
   <data name="DualSRumbleModeLegacy" xml:space="preserve">
-    <value>Legacy</value>
+    <value>Perintö</value>
   </data>
   <data name="DualSRumbleModeNPowerLevelTxt" xml:space="preserve">
-    <value>Rumble mode and strength level:</value>
+    <value>Rumble-tila ja voimataso:</value>
   </data>
   <data name="DualSRumbleModePassthru" xml:space="preserve">
     <value>Passthru</value>
   </data>
   <data name="DualSRumbleSpecificSettings" xml:space="preserve">
-    <value>DualSense specific rumble settings</value>
+    <value>DualSense-kohtaiset rumble-asetukset</value>
   </data>
   <data name="DualSRumbleForceGenericRescale_Tip" xml:space="preserve">
-    <value>Recommended to be left DISABLED.
+    <value>Suositellaan jätettäväksi POIS KÄYTÖSTÄ.
 
-- Disabled: rumble will be rescaled natively by the controller accordingly to the defined power level (better quality)
+- Pois käytöstä: ohjain skaalaa rumblen alkuperäisesti määritetyn tehotason mukaisesti (parempi laatu)
 
-- Enabled: both DS4Windows generic rumble rescale and DualSense's native control will be active</value>
+- Käytössä: sekä DS4Windowsin yleinen rumble-uudelleenskaalaus että DualSensen alkuperäinen ohjaus ovat aktiivisia</value>
   </data>
   <data name="DualSRumbleModes_Tip" xml:space="preserve">
-    <value>Accurate Mode (recommended):
-- Better replicates the DualShock 4/Xbox 360 controller rumble feeling
-- More accurately executes game's intended rumble effects
-- Rumble has more depth. Within the same power level there is a greater difference between min and max in-game rumble activation,
-varying from real low up to the max strength of the defined power level
+    <value>Tarkka tila (suositus):
+- Toistaa paremmin DualShock 4/Xbox 360 -ohjaimen jyrinän tunteen
+- Suorittaa tarkemmin pelin aiotut rumble-efektit
+- Rumblessa on enemmän syvyyttä. Samalla tehotasolla on suurempi ero pelin sisäisen rumble-aktivoinnin välillä,
+vaihtelee todella matalasta määritellyn tehotason maksimivoimakkuuteen
 
-Legacy Mode:
-- Overral stronger, but lacks depth
-- Has a "sharper" feeling
-- The min and max activation in-game will be, respectively, only slightly below and slight above the chosen power level strength
+Vanha tila:
+- Yleinen voimakkaampi, mutta syvyydestä puuttuu
+- On "terävämpi" tunne
+- Pelin sisäinen aktivointi minimi- ja maksimiarvo on vain hieman alle ja hieman yli valitun tehotason.
 
-Disabled:
-- Fully disables rumble</value>
+Liikuntarajoitteinen:
+- Poistaa rumblen kokonaan käytöstä</value>
   </data>
   <data name="DualSRumblePowerLevel_Tip" xml:space="preserve">
-    <value>DualSense's native rumble Power Level rescaler.
+    <value>DualSensen alkuperäinen rumble Power Level -rescaler.
 
-- When in Accurate Mode, rumble's [ min // max ] will be [ 1% /// Chosen Power Level ]
-    - Example (62%): [ min = 1% /// max = 62% ]
+- Tarkkatilassa jyrinän [ min // max ] on [ 1 % /// Valittu tehotaso ]
+    - Esimerkki (62 %): [ min = 1 % /// max = 62 % ]
 
-- When in Legacy Mode, rumble's [min /// max ] will be roughly [ Power Level - 12% /// Power Level + 12% ]
-    - Example (62%): [ min = 50% /// max = 74% ]</value>
+- Legacy-tilassa rumblen [min /// max ] on suunnilleen [ Tehotaso - 12 % /// Tehotaso + 12 % ]
+    - Esimerkki (62 %): [ min = 50 % /// max = 74 % ]</value>
   </data>
   <data name="Accept" xml:space="preserve">
-    <value>Accept</value>
+    <value>Hyväksyä</value>
   </data>
   <data name="Black" xml:space="preserve">
-    <value>Black</value>
+    <value>Musta</value>
   </data>
   <data name="Colored" xml:space="preserve">
-    <value>Colored</value>
+    <value>Värillinen</value>
   </data>
   <data name="Default" xml:space="preserve">
-    <value>Default</value>
+    <value>Oletus</value>
   </data>
   <data name="DeviceType" xml:space="preserve">
-    <value>Device type</value>
+    <value>Laitetyyppi</value>
   </data>
   <data name="DisconnectFromBtWhenStopping" xml:space="preserve">
-    <value>Disconnect from BT when Stopping</value>
+    <value>Katkaise yhteys BT:hen pysähtyessäsi</value>
   </data>
   <data name="Dynamic" xml:space="preserve">
-    <value>Dynamic</value>
+    <value>Dynaaminen</value>
   </data>
   <data name="FlashLightbarAtHighLatency" xml:space="preserve">
-    <value>Flash Lightbar at High Latency</value>
+    <value>Flash Lightbar korkealla viiveellä</value>
   </data>
   <data name="HideDS4Controller" xml:space="preserve">
-    <value>Hide DS4 Controller</value>
+    <value>Piilota DS4-ohjain</value>
   </data>
   <data name="HotkeysAbout" xml:space="preserve">
-    <value>Hotkeys/About</value>
+    <value>Pikanäppäimet/Tietoja</value>
   </data>
   <data name="IconChoice" xml:space="preserve">
-    <value>Icon Choice</value>
+    <value>Kuvakkeen valinta</value>
   </data>
   <data name="MinimizeToTaskbar" xml:space="preserve">
-    <value>Minimize to Taskbar</value>
+    <value>Pienennä Tehtäväpalkkiin</value>
   </data>
   <data name="MinimizeToTaskbarTip" xml:space="preserve">
-    <value>Minimize to Taskbar instead of System Tray</value>
+    <value>Pienennä Tehtäväpalkkiin Ilmaisinalueen Sijaan</value>
   </data>
   <data name="OutputSlots" xml:space="preserve">
-    <value>Output Slots</value>
+    <value>Lähtöpaikat</value>
   </data>
   <data name="Permanent" xml:space="preserve">
-    <value>Permanent</value>
+    <value>Pysyvä</value>
   </data>
   <data name="Plug" xml:space="preserve">
-    <value>Plug</value>
+    <value>Pistoke</value>
   </data>
   <data name="RevertToDefaultProfileOnUnknown" xml:space="preserve">
-    <value>Revert to default profile on unknown</value>
+    <value>Palauta Oletusprofiili Tuntemattomaan</value>
   </data>
   <data name="ShowAutoProfileDebugMessages" xml:space="preserve">
-    <value>Show auto-profile debug messages</value>
+    <value>Näytä Automaattisen Profiilin Virheenkorjausviestit</value>
   </data>
   <data name="SwipeTouchpadToSwitchProfiles" xml:space="preserve">
-    <value>Swipe Touchpad To Switch Profiles</value>
+    <value>Vaihda Profiileja Pyyhkäisemällä Kosketuslevyä</value>
   </data>
   <data name="TurnOffDS4WindowsTemporarily" xml:space="preserve">
-    <value>Turn Off DS4Windows Temporarily</value>
+    <value>Sammuta DS4Windows Väliaikaisesti</value>
   </data>
   <data name="Unplug" xml:space="preserve">
-    <value>Unplug</value>
+    <value>Irrota Pistoke</value>
   </data>
   <data name="White" xml:space="preserve">
-    <value>White</value>
+    <value>Valkoinen</value>
   </data>
   <data name="AppTheme" xml:space="preserve">
-    <value>App Theme</value>
+    <value>Sovelluksen Teema</value>
   </data>
   <data name="CheckEvery" xml:space="preserve">
-    <value>Check every</value>
+    <value>Tarkista Jokainen</value>
   </data>
   <data name="OscServerHeading" xml:space="preserve">
-    <value>External OSC Control &amp; Monitoring</value>
+    <value>Ulkoinen OSC-ohjaus &amp; Valvonta</value>
   </data>
   <data name="EnableOscServer" xml:space="preserve">
-    <value>Enable Control Server</value>
+    <value>Ota Ohjauspalvelin Käyttöön</value>
   </data>
   <data name="EnableInterpretingOscMonitoring" xml:space="preserve">
-    <value>Interpret Monitoring Messages</value>
+    <value>Tulkitse Valvontaviestit</value>
   </data>
-  <data name="EnableOscSender" xml:space="preserve">
-    <value>Enable Monitoring Service</value>
+    <data name="EnableOscSender" xml:space="preserve">
+    <value>Ota Valvontapalvelu Käyttöön</value>
   </data>
   <data name="ControllerSupportDS4" xml:space="preserve">
-    <value>DS4 Controller Support</value>
+    <value>DS4-Ohjaintuki</value>
   </data>
   <data name="ControllerSupportDualSense" xml:space="preserve">
-    <value>DualSense Controller Support</value>
+    <value>DualSense-Ohjaimen Tuki</value>
   </data>
   <data name="ControllerSupportJoyCon" xml:space="preserve">
-    <value>JoyCon Controller Support</value>
+    <value>JoyCon-Ohjaintuki</value>
   </data>
   <data name="ControllerSupportSwitchPro" xml:space="preserve">
-    <value>Switch Pro Controller Support</value>
+    <value>Switch Pro-Ohjaimen Tuki</value>
   </data>
   <data name="Copycat" xml:space="preserve">
     <value>Copycat</value>
   </data>
   <data name="CopycatTip" xml:space="preserve">
-    <value>Change some flags used for a non-Sony DS4 controller. It might fix rumble and lightbar support for some third party DS4 clones</value>
+    <value>Muuta joitain muussa kuin Sony DS4 -ohjaimessa käytettyjä lippuja. Se saattaa korjata rumble- ja lightbar-tuen joillekin kolmannen osapuolen DS4-klooneille</value>
   </data>
   <data name="Dark" xml:space="preserve">
-    <value>Dark</value>
+    <value>Tumma</value>
   </data>
   <data name="Days" xml:space="preserve">
-    <value>Days</value>
+    <value>Päivää</value>
   </data>
   <data name="DetectedControllers" xml:space="preserve">
-    <value>Detected Controllers</value>
+    <value>Havaitut Ohjaimet</value>
   </data>
   <data name="DeviceOptions" xml:space="preserve">
-    <value>Device Options</value>
+    <value>Laitteen Asetukset</value>
   </data>
   <data name="EnableVerboseLog" xml:space="preserve">
-    <value>Enable verbose log</value>
+    <value>Ota monisanainen loki käyttöön</value>
   </data>
   <data name="EnableVerboseLogTip" xml:space="preserve">
-    <value>Show additional log messages when a gamepad is connected</value>
+    <value>Näytä lisää lokiviestejä, kun peliohjain on kytketty</value>
   </data>
   <data name="Hours" xml:space="preserve">
-    <value>Hours</value>
+    <value>Tuntia</value>
   </data>
   <data name="UseCustomSteamFolder" xml:space="preserve">
-    <value>Use custom Steam Folder</value>
+    <value>Käytä mukautettua Steam-kansiota</value>
   </data>
   <data name="Utils" xml:space="preserve">
     <value>Utils</value>
   </data>
   <data name="Program" xml:space="preserve">
-    <value>Program</value>
+    <value>Ohjelmoida</value>
   </data>
   <data name="RunAs" xml:space="preserve">
-    <value>Run As</value>
+    <value>Suorita Nimellä</value>
   </data>
   <data name="Task" xml:space="preserve">
-    <value>Task</value>
+    <value>Tehtävä</value>
   </data>
   <data name="GyroTriggerJitterCompensationTooltip" xml:space="preserve">
-    <value>Add additional throttling at low end of curve to account for device shaking</value>
+    <value>Lisää ylimääräinen kuristus käyrän alapäässä laitteen tärinän huomioimiseksi</value>
   </data>
   <data name="WakeupFromSuspend" xml:space="preserve">
-    <value>Waking Up From Suspend</value>
-  </data>
-  <data name="ControllerSupportDS3" xml:space="preserve">
-    <value>DS3 Controller Support</value>
-  </data>
-  <data name="FirstLaunch.DeviceIntroText" xml:space="preserve">
-    <value>Due to other mappers enabling support for multiple device types by default (Steam Input), DS4Windows only enables support for reading from DS4 controllers by default. You can specify mapper support for other supported device types here. Be careful when using DS4Windows with other possible mappers running at the same time.</value>
-  </data>
-  <data name="FirstLaunch.DS3EnableCkbLabel" xml:space="preserve">
-    <value>DS3 Device Support</value>
-  </data>
-  <data name="FirstLaunch.DS3EnableText" xml:space="preserve">
-    <value>Support for DualShock 3 (PS3) controllers. Requires the use of the DsHidMini driver from the ViGEm project (nefarius).</value>
-  </data>
-  <data name="FirstLaunch.DS4EnableCkbLabel" xml:space="preserve">
-    <value>DS4 Device Support</value>
-  </data>
-  <data name="FirstLaunch.DS4EnableText" xml:space="preserve">
-    <value>Support for known DualShock 4 controllers</value>
-  </data>
-  <data name="FirstLaunch.DSEnableCkbLabel" xml:space="preserve">
-    <value>DualSense Device Support</value>
-  </data>
-  <data name="FirstLaunch.DSEnableText" xml:space="preserve">
-    <value>Support for DualSense (PS5) controllers. Base model and DS Edge</value>
-  </data>
-  <data name="FirstLaunch.Header" xml:space="preserve">
-    <value>Enabled Devices Mapper Support</value>
-  </data>
-  <data name="FirstLaunch.JoyConEnableCkbLabel" xml:space="preserve">
-    <value>JoyCon Device Support</value>
-  </data>
-  <data name="FirstLaunch.JoyConEnableText" xml:space="preserve">
-    <value>Support for JoyCon (Nintendo Switch) controllers</value>
-  </data>
-  <data name="FirstLaunch.SwitchProEnableCkbLabel" xml:space="preserve">
-    <value>Switch Pro Device Support</value>
-  </data>
-  <data name="FirstLaunch.SwitchProEnableText" xml:space="preserve">
-    <value>Support for Switch Pro (Nintendo Switch) controllers.</value>
-  </data>
-  <data name="FirstLaunch.WinTitle" xml:space="preserve">
-    <value>First Launch</value>
-  </data>
-  <data name="AutoProfiles.DisplaySwitchVia" xml:space="preserve">
-    <value>Display Profile Switch via</value>
-  </data>
-  <data name="AutoProfiles.LogAndNotification" xml:space="preserve">
-    <value>Log + Notification</value>
-  </data>
-  <data name="Notification" xml:space="preserve">
-    <value>Notification</value>
-  </data>
-  <data name="Light" xml:space="preserve">
-    <value>Light</value>
+    <value>Herääminen Keskeytyksestä</value>
   </data>
 </root>

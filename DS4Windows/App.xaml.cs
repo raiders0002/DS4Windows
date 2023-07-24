@@ -66,13 +66,11 @@ namespace DS4WinWPF
             Dictionary<DS4Windows.AppThemeChoice, string>()
         {
             [DS4Windows.AppThemeChoice.Default] = "DS4Forms/Themes/DefaultTheme.xaml",
+            [DS4Windows.AppThemeChoice.Light] = "DS4Forms/Themes/DefaultTheme.xaml",
             [DS4Windows.AppThemeChoice.Dark] = "DS4Forms/Themes/DarkTheme.xaml",
         };
 
         public event EventHandler ThemeChanged;
-
-        private Dictionary<string, System.Reflection.Assembly> langAssemblies =
-            new Dictionary<string, System.Reflection.Assembly>();
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
@@ -105,12 +103,12 @@ namespace DS4WinWPF
             DS4Windows.Util.NtSetInformationProcess(Process.GetCurrentProcess().Handle,
                 DS4Windows.Util.PROCESS_INFORMATION_CLASS.ProcessPagePriority, ref pagePrio, 4);
 
-            try
+            // another instance is already running if TryOpenExisting returns true.
+            if (EventWaitHandleAcl.TryOpenExisting(SingleAppComEventName,
+                System.Security.AccessControl.EventWaitHandleRights.Synchronize |
+                System.Security.AccessControl.EventWaitHandleRights.Modify,
+                out EventWaitHandle tempComEvent))
             {
-                // another instance is already running if OpenExisting succeeds.
-                EventWaitHandle tempComEvent = EventWaitHandleAcl.OpenExisting(SingleAppComEventName,
-                    System.Security.AccessControl.EventWaitHandleRights.Synchronize |
-                    System.Security.AccessControl.EventWaitHandleRights.Modify);
                 tempComEvent.Set();  // signal the other instance.
                 tempComEvent.Close();
 
@@ -118,7 +116,6 @@ namespace DS4WinWPF
                 Current.Shutdown();    // Quit temp instance
                 return;
             }
-            catch { /* don't care about errors */ }
 
             // Allow sleep time durations less than 16 ms
             DS4Windows.Util.timeBeginPeriod(1);
@@ -135,6 +132,10 @@ namespace DS4WinWPF
 
             DS4Windows.Global.FindConfigLocation();
             bool firstRun = DS4Windows.Global.firstRun;
+
+            // Could not find unique profile location; does not exist or multiple places.
+            // Advise user to specify where DS4Windows should save its configuation files
+            // and profiles
             if (firstRun)
             {
                 DS4Forms.SaveWhere savewh =
@@ -142,6 +143,7 @@ namespace DS4WinWPF
                 savewh.ShowDialog();
             }
 
+            // Exit if base configuration could not be generated
             if (firstRun && !CreateConfDirSkeleton())
             {
                 MessageBox.Show($"Cannot create config folder structure in {DS4Windows.Global.appdatapath}. Exiting",
@@ -170,6 +172,17 @@ namespace DS4WinWPF
                 logger.Info($@"Profiles.xml not read at location ${DS4Windows.Global.appdatapath}\Profiles.xml. Using default app settings");
             }
 
+            // Ask user which devices the mapper should attempt to open when detected.
+            // Currently only support DS4 by default to avoid extra complications from
+            // Steam Input
+            if (firstRun)
+            {
+                DS4Forms.FirstLaunchUtilWindow firstLaunchUtilWin =
+                    new DS4Forms.FirstLaunchUtilWindow(DS4Windows.Global.DeviceOptions);
+                firstLaunchUtilWin.ShowDialog();
+                DS4Windows.Global.Save();
+            }
+
             if (firstRun)
             {
                 logger.Info("No config found. Creating default config");
@@ -191,18 +204,10 @@ namespace DS4WinWPF
                 DS4Windows.Global.CreateStdActions();
             }
 
-            // Discover and load possible Lang assemblies
-            //PrepareLangAssemblies();
-            // Add hook to have .NET find the Lang assemblies. Loading will be performed
-            // during MainWindow.InitializeComponent
-            //AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
             // Have app use selected culture
             SetUICulture(DS4Windows.Global.UseLang);
             DS4Windows.AppThemeChoice themeChoice = DS4Windows.Global.UseCurrentTheme;
-            if (themeChoice != DS4Windows.AppThemeChoice.Default)
-            {
-                ChangeTheme(DS4Windows.Global.UseCurrentTheme, false);
-            }
+            ChangeTheme(DS4Windows.Global.UseCurrentTheme, false);
 
             DS4Windows.Global.LoadLinkedProfiles();
             DS4Forms.MainWindow window = new DS4Forms.MainWindow(parser);
@@ -210,9 +215,6 @@ namespace DS4WinWPF
             window.IsInitialShow = true;
             window.Show();
             window.IsInitialShow = false;
-
-            // Remove hook for custom assembly loading. Needed or app performance drops
-            //AppDomain.CurrentDomain.AssemblyResolve -= CurrentDomain_AssemblyResolve;
 
             // Set up hooks for IPC command calls
             HwndSource source = PresentationSource.FromVisual(window) as HwndSource;
@@ -230,48 +232,6 @@ namespace DS4WinWPF
 
             rootHub.LoadPermanentSlotsConfig();
             window.LateChecks(parser);
-        }
-
-        private void PrepareLangAssemblies()
-        {
-            List<string> lookupPaths = DS4Windows.Global.PROBING_PATH.Split(';')
-                .Select(path => Path.Combine(DS4Windows.Global.exedirpath, path))
-                .Where(path => path != DS4Windows.Global.exedirpath)
-                .ToList();
-            //lookupPaths.Insert(0, DS4Windows.Global.exedirpath);
-
-            List<string> langPackList = CultureInfo.GetCultures(CultureTypes.AllCultures)
-                .Where(c => IsLanguageAssemblyAvailable(lookupPaths, c))
-                .Select(c => LanguageAssemblyPath(lookupPaths, c))
-                .ToList();
-
-            foreach(string path in langPackList)
-            {
-                System.Reflection.Assembly tempAss = System.Reflection.Assembly.LoadFile(path);
-                langAssemblies.Add(tempAss.FullName, tempAss);
-            }
-        }
-
-        private bool IsLanguageAssemblyAvailable(List<string> lookupPaths, CultureInfo culture)
-        {
-            return lookupPaths.Select(path => Path.Combine(path, culture.Name,
-                DS4Windows.Global.LANGUAGE_ASSEMBLY_NAME))
-                .Where(path => File.Exists(path))
-                .Count() > 0;
-        }
-
-        private string LanguageAssemblyPath(List<string> lookupPaths, CultureInfo culture)
-        {
-            return lookupPaths.Select(path => Path.Combine(path, culture.Name,
-                DS4Windows.Global.LANGUAGE_ASSEMBLY_NAME))
-                .Where(path => File.Exists(path)).First();
-        }
-
-        private System.Reflection.Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
-        {
-            System.Reflection.Assembly res;
-            langAssemblies.TryGetValue(args.Name, out res);
-            return res;
         }
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
@@ -698,7 +658,22 @@ namespace DS4WinWPF
         public void ChangeTheme(DS4Windows.AppThemeChoice themeChoice,
             bool fireChanged=true)
         {
-            if (themeLocs.TryGetValue(themeChoice, out string loc))
+            if (themeChoice == DS4Windows.AppThemeChoice.Default)
+            {
+                Application.Current.Resources.MergedDictionaries.Clear();
+
+                // Attempt to switch theme based on currently selected Windows apps theme mode
+                DS4Windows.AppThemeChoice implicitTheme = DS4Windows.Util.SystemAppsUsingDarkTheme() ?
+                    DS4Windows.AppThemeChoice.Dark : DS4Windows.AppThemeChoice.Light;
+                themeLocs.TryGetValue(implicitTheme, out string loc);
+                Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri(loc, uriKind: UriKind.Relative) });
+
+                if (fireChanged)
+                {
+                    ThemeChanged?.Invoke(this, EventArgs.Empty);
+                }
+            }
+            else if (themeLocs.TryGetValue(themeChoice, out string loc))
             {
                 Application.Current.Resources.MergedDictionaries.Clear();
                 Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri(loc, uriKind: UriKind.Relative) });

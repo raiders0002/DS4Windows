@@ -480,7 +480,8 @@ Suspend support not enabled.", true);
                             //Thread.Sleep(60000);
                             //App.rootHub.Start();
 
-                            Task startupTask = Task.Delay(150000).ContinueWith(t =>
+                            //Task startupTask = Task.Run(() =>
+                            Task startupTask = Task.Delay(5000).ContinueWith(t =>
                             {
                                 App.rootHub.Start();
                             });
@@ -947,6 +948,14 @@ Suspend support not enabled.", true);
             autoProfilesTimer.Stop();
             //autoProfileHolder.Save();
             Util.UnregisterNotify(regHandle);
+
+            // Attempt to dispose of notify icon early
+            if (notifyIcon != null)
+            {
+                notifyIcon.Dispose();
+                notifyIcon = null;
+            }
+
             Application.Current.Shutdown();
         }
 
@@ -1264,7 +1273,7 @@ Suspend support not enabled.", true);
             controllerLV.SelectedIndex = idx;
             CompositeDeviceModel item = conLvViewModel.CurrentItem;
 
-            if (item != null)
+            if (item != null && item.SelectedIndex != -1)
             {
                 ProfileEntity entity = profileListHolder.ProfileListCol[item.SelectedIndex];
                 ShowProfileEditor(idx, entity);
