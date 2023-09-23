@@ -94,9 +94,10 @@
       <HintPath>..\libs\$(Platform)\SharpOSC\SharpOSC.dll</HintPath>
     </Reference>
 
-    <Reference Include="Nefarius.ViGEm.Client">
+    <!-- <Reference Include="Nefarius.ViGEm.Client">
       <HintPath>..\libs\$(Platform)\Nefarius.ViGEm.Client\Nefarius.ViGEm.Client.dll</HintPath>
-    </Reference>
+    </Reference> -->
+
   </ItemGroup>
 
   <!-- Apparently the None tags are needed as well as the Resource tags.
