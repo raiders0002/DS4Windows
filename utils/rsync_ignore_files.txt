@@ -1,11 +1,13 @@
 /ar
 /cs
 /de
+/el
 /es
 /fi
 /fr
 /he
 /hu-HU
+/idn
 /it
 /ja
 /ko

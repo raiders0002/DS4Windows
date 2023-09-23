@@ -1323,6 +1323,16 @@ namespace DS4WinWPF.DS4Control.DTOXml
             get; set;
         }
 
+        [XmlElement("DS4OutputTriggerMode")]
+        public DS4TriggerOutputMode OutputDS4TriggerMode
+        {
+            get; set;
+        }
+        public bool ShouldSerializeOutputDS4TriggerMode()
+        {
+            return OutputDS4TriggerMode != BackingStore.DEFAULT_DS4_TRIGGER_OUTPUT;
+        }
+
         [XmlElement("ProfileActions")]
         public string ProfileActions
         {
@@ -1692,6 +1702,8 @@ namespace DS4WinWPF.DS4Control.DTOXml
             };
 
             OutputContDevice = source.outputDevType[deviceIndex];
+            OutputDS4TriggerMode = source.outputDS4TriggerMode[deviceIndex];
+
             ProfileActions = string.Join("/", source.profileActions[deviceIndex]);
             Control = new DS4ControlAssignementSerializer();
             ShiftControl = new DS4ControlAssignementSerializer();
@@ -2284,8 +2296,9 @@ namespace DS4WinWPF.DS4Control.DTOXml
                 destination.buttonAbsMouseInfos[deviceIndex].snapToCenter = AbsMouseRegionSettings.SnapToCenter;
             };
 
-
             destination.outputDevType[deviceIndex] = OutputContDevice;
+            destination.outputDS4TriggerMode[deviceIndex] = OutputDS4TriggerMode;
+
             if (!string.IsNullOrEmpty(ProfileActions))
             {
                 string[] actionNames = ProfileActions.Split('/');

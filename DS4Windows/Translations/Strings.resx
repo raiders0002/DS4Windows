@@ -437,7 +437,7 @@ Example: whyme_DS4Windows</value>
     <value>Real World Calibration</value>
   </data>
   <data name="ViGEmPluginFailure" xml:space="preserve">
-    <value>ViGEm Device Plugin Failed. Likely an internal ViGEmBus problem. Closing connection. If the issue persists, please close DS4Windows and then reboot Windows.</value>
+    <value>ViGEm Device Plugin Failed. Error Code {0}. Likely an internal ViGEmBus problem. Closing connection. If the issue persists, please close DS4Windows and then reboot Windows.</value>
   </data>
   <data name="CRC32Fail" xml:space="preserve">
     <value>Data integrity checks failed for wireless device. Closing device.</value>
@@ -795,5 +795,17 @@ Disabled:
   </data>
   <data name="Light" xml:space="preserve">
     <value>Light</value>
+  </data>
+  <data name="ProfileEditor.VirtualDS4TrigOutput" xml:space="preserve">
+    <value>DS4 Trigger Output Mode</value>
+  </data>
+  <data name="Analog" xml:space="preserve">
+    <value>Analog</value>
+  </data>
+  <data name="Buttons" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="DS4OutputTriggersDefault" xml:space="preserve">
+    <value>Default (Analog + Buttons)</value>
   </data>
 </root>

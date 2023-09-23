@@ -14,7 +14,6 @@ using static DS4Windows.Global;
 using DS4WinWPF.DS4Control;
 using DS4Windows.DS4Control;
 //using Nefarius.ViGEm.Client.Targets.DualShock4;
-using Nefarius.Utilities.DeviceManagement.PnP;
 using static DS4Windows.Util;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
@@ -489,7 +488,7 @@ namespace DS4Windows
             Global.outputKBMMapping.PopulateMappings();
         }
 
-        private void OutputslotMan_ViGEmFailure(object sender, EventArgs e)
+        private void OutputslotMan_ViGEmFailure(object sender, int errorCode)
         {
             eventDispatcher.BeginInvoke((Action)(() =>
             {
@@ -497,7 +496,8 @@ namespace DS4Windows
                 while (inServiceTask)
                     Thread.SpinWait(1000);
 
-                LogDebug(DS4WinWPF.Translations.Strings.ViGEmPluginFailure, true);
+                LogDebug(string.Format(DS4WinWPF.Translations.Strings.ViGEmPluginFailure, errorCode),
+                    true);
                 Stop();
             }));
         }
@@ -639,8 +639,17 @@ namespace DS4Windows
                     }
                     // Catch Blank Values and initialize for Startup. Also catches empty Values.
                     // Also Catches Empty values in auto-profiler, and defaults to trying to re-add D4W. Will fail harmlessly later.
-                    if (ExePath == "") { ExePath = Global.exelocation; ExeName = "DS4Windows"; AddExe = true; } 
-                    
+                    if (ExePath == "") { ExePath = Global.exelocation; ExeName = "DS4Windows"; AddExe = true; }
+
+                    // Check for inverse application cloak. If setting is being used in HidHide,
+                    // skip checking HidHide whitelist for DS4Windows.
+                    bool inverseAppCloak = hidHideDevice.GetWhiteListInverseState();
+                    if (inverseAppCloak)
+                    {
+                        return;
+                    }
+
+
                     List<string> dosPaths = hidHideDevice.GetWhitelist();
 
                     int maxPathCheckLength = 512;
@@ -723,7 +732,7 @@ namespace DS4Windows
             bool result = false;
             if (dev != null && hidDeviceHidingEnabled)
             {
-                string deviceInstanceId = PnPDevice.GetInstanceIdFromInterfaceId(dev.HidDevice.DevicePath);
+                string deviceInstanceId = Global.GetInstanceIdFromDevicePath(dev.HidDevice.DevicePath);
                 if (Global.hidHideInstalled)
                 {
                     result = Global.CheckHidHideAffectedStatus(deviceInstanceId,
@@ -761,7 +770,7 @@ namespace DS4Windows
                     break;
                 case InputDevices.InputDeviceType.JoyConL:
                 case InputDevices.InputDeviceType.JoyConR:
-                    result.AddRange(new DS4Controls[] { DS4Controls.Capture, DS4Controls.SideL, DS4Controls.SideR });
+                    result.AddRange(new DS4Controls[] { DS4Controls.Capture, DS4Controls.SideL, DS4Controls.SideR, DS4Controls.FnL, DS4Controls.FnR });
                     break;
                 case InputDevices.InputDeviceType.SwitchPro:
                     result.AddRange(new DS4Controls[] { DS4Controls.Capture });
@@ -2721,6 +2730,25 @@ namespace DS4Windows
 
                 if (!useDInputOnly[ind])
                 {
+                    // Perform this virtual trigger button check in post
+                    if (activeOutDevType[ind] == OutContType.DS4)
+                    {
+                        DS4TriggerOutputMode trigMode = Global.GetOutputDS4TriggerMode(ind);
+                        if (trigMode == DS4TriggerOutputMode.Default)
+                        {
+                            cState.L2Btn = cState.L2 > 0;
+                            cState.R2Btn = cState.R2 > 0;
+                        }
+                        else if (trigMode == DS4TriggerOutputMode.Buttons)
+                        {
+                            cState.L2Btn = cState.L2 > 0;
+                            cState.R2Btn = cState.R2 > 0;
+                            // Disable analog output
+                            cState.L2 = 0;
+                            cState.R2 = 0;
+                        }
+                    }
+
                     outputDevices[ind]?.ConvertandSendReport(cState, ind);
                     //testNewReport(ref x360reports[ind], cState, ind);
                     //x360controls[ind]?.SendReport(x360reports[ind]);

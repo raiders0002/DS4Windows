@@ -648,6 +648,44 @@ namespace DS4WinWPF.DS4Forms.ViewModels
         }
         public EventHandler DInputOnlyChanged;
 
+        public bool VirtualTriggerButtons
+        {
+            get => Global.OutputVirtualTriggerButton[device];
+            set
+            {
+                bool temp = Global.OutputVirtualTriggerButton[device];
+                if (temp == value) return;
+
+                Global.OutputVirtualTriggerButton[device] = value;
+                VirtualTriggerButtonsChanged?.Invoke(this, EventArgs.Empty);
+            }
+        }
+        public event EventHandler VirtualTriggerButtonsChanged;
+
+        private List<EnumChoiceSelection<DS4TriggerOutputMode>> outputDS4TriggerModeOptions =
+            new List<EnumChoiceSelection<DS4TriggerOutputMode>>
+            {
+                new EnumChoiceSelection<DS4TriggerOutputMode>(Translations.Strings.DS4OutputTriggersDefault, DS4TriggerOutputMode.Default),
+                new EnumChoiceSelection<DS4TriggerOutputMode>(Translations.Strings.Analog, DS4TriggerOutputMode.Analog),
+                new EnumChoiceSelection<DS4TriggerOutputMode>(Translations.Strings.Buttons, DS4TriggerOutputMode.Buttons),
+            };
+
+        public List<EnumChoiceSelection<DS4TriggerOutputMode>> OutputDS4TriggerModeOptions => outputDS4TriggerModeOptions;
+
+        public DS4TriggerOutputMode OutputDS4TriggerMode
+        {
+            get => Global.OutputDS4TriggerMode[device];
+            set
+            {
+                DS4TriggerOutputMode temp = Global.OutputDS4TriggerMode[device];
+                if (temp == value) return;
+
+                Global.OutputDS4TriggerMode[device] = value;
+                OutputDS4TriggerModeChanged?.Invoke(this, EventArgs.Empty);
+            }
+        }
+        public event EventHandler OutputDS4TriggerModeChanged;
+
         public bool IdleDisconnectExists
         {
             get => Global.IdleDisconnectTimeout[device] != 0;

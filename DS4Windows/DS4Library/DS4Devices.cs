@@ -6,7 +6,6 @@ using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Threading;
 using DS4Windows.InputDevices;
-using Nefarius.Utilities.DeviceManagement.PnP;
 
 namespace DS4Windows
 {
@@ -172,21 +171,8 @@ namespace DS4Windows
 
         private static bool IsRealDS4(HidDevice hDevice)
         {
-            var device = PnPDevice.GetDeviceByInterfaceId(hDevice.DevicePath);
-
-            return !device.IsVirtual(pDevice =>
-            {
-                var hardwareIds = pDevice.GetProperty<string[]>(DevicePropertyKey.Device_HardwareIds).ToList();
-
-                // hardware IDs of root hubs/controllers that emit supported virtual devices as sources
-                var excludedIds = new[]
-                {
-                    @"ROOT\HIDGAMEMAP", // reWASD
-                    @"ROOT\VHUSB3HC", // VirtualHere
-                };
-
-                return hardwareIds.Any(id => excludedIds.Contains(id.ToUpper()));
-            });
+            bool result = !Global.CheckIfVirtualDevice(hDevice.DevicePath);
+            return result;
         }
 
         // Enumerates ds4 controllers in the system
@@ -231,8 +217,9 @@ namespace DS4Windows
                     VidPidInfo metainfo = knownDevices.Single(x => x.vid == hDevice.Attributes.VendorId &&
                         x.pid == hDevice.Attributes.ProductId);
 
-                    if (!metainfo.featureSet.HasFlag(VidPidFeatureSet.VendorDefinedDevice) && hDevice.Description == "HID-compliant vendor-defined device")
-                        continue; // ignore the Nacon Revolution Pro programming interface
+                    if (!metainfo.featureSet.HasFlag(VidPidFeatureSet.VendorDefinedDevice) &&
+                        hDevice.Capabilities.UsagePage >= 0xFF00)
+                        continue; // Ignore devices using Vendor-Defined HID Usage Pages (expected to ignore the Nacon Revolution Pro programming interface)
                     else if (DevicePaths.Contains(hDevice.DevicePath))
                         continue; // BT/USB endpoint already open once
 
@@ -251,8 +238,8 @@ namespace DS4Windows
                                 if (!elevated)
                                 {
                                     // Tell the client to launch routine to re-enable a device
-                                    RequestElevationArgs eleArgs = 
-                                        new RequestElevationArgs(PnPDevice.GetInstanceIdFromInterfaceId(hDevice.DevicePath));
+                                    RequestElevationArgs eleArgs =
+                                        new RequestElevationArgs(Global.GetInstanceIdFromDevicePath(hDevice.DevicePath));
                                     RequestElevation?.Invoke(eleArgs);
                                     if (eleArgs.StatusCode == RequestElevationArgs.STATUS_SUCCESS)
                                     {
@@ -261,7 +248,7 @@ namespace DS4Windows
                                 }
                                 else
                                 {
-                                    reEnableDevice(PnPDevice.GetInstanceIdFromInterfaceId(hDevice.DevicePath));
+                                    reEnableDevice(Global.GetInstanceIdFromDevicePath(hDevice.DevicePath));
                                     hDevice.OpenDevice(isExclusiveMode);
                                 }
                             }
