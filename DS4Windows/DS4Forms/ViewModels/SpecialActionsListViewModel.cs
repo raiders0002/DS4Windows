@@ -49,6 +49,20 @@ namespace DS4WinWPF.DS4Forms.ViewModels
             this.deviceNum = deviceNum;
 
             SpecialActionIndexChanged += SpecialActionsListViewModel_SpecialActionIndexChanged;
+            actionCol.CollectionChanged += ActionCol_CollectionChanged;
+        }
+
+        private void ActionCol_CollectionChanged(object sender,
+            System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Remove)
+            {
+                for (int i = e.OldStartingIndex; i < actionCol.Count; i++)
+                {
+                    // Replace old index with updated index
+                    actionCol[i].Index = i;
+                }
+            }
         }
 
         private void SpecialActionsListViewModel_SpecialActionIndexChanged(object sender, EventArgs e)
@@ -144,7 +158,8 @@ namespace DS4WinWPF.DS4Forms.ViewModels
         public void RemoveAction(SpecialActionItem item)
         {
             Global.RemoveAction(item.SpecialAction.name);
-            actionCol.RemoveAt(specialActionIndex);
+            int itemIndex = item.Index;
+            actionCol.RemoveAt(itemIndex);
             Global.ProfileActions[deviceNum].Remove(item.SpecialAction.name);
             Global.CacheExtraProfileInfo(deviceNum);
         }
