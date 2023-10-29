@@ -1084,6 +1084,9 @@ namespace DS4Windows
                 Xbox360ScpOutDevice.Xbox360FeedbackReceivedEventHandler p = (sender, small, large, slotIdx) =>
                 {
                     SetDevRumble(device, large, small, devIndex);
+
+                    //Trace.WriteLine(string.Format("Rumble ({0}, {1}) {2}",
+                    //    large, small, DateTime.Now.ToString("hh:mm:ss.FFFF")));
                 };
 
                 tempXbox.FeedbackReceived += p;
@@ -1564,7 +1567,7 @@ namespace DS4Windows
                 bool runningAsAdmin = Global.IsAdministrator();
                 if (Global.outputKBMHandler.GetIdentifier() != FakerInputHandler.IDENTIFIER && !runningAsAdmin)
                 {
-                    string helpURL = @"https://docs.ds4windows.app/troubleshooting/kb-mouse-issues/#windows-not-responding-to-ds4ws-kb-m-commands-in-some-situations";
+                    string helpURL = @"https://ryochan7.github.io/ds4windows-site/troubleshooting/kb-mouse-issues/#windows-not-responding-to-ds4ws-kb-m-commands-in-some-situations";
                     LogDebug($"Some applications may block controller inputs. (Windows UAC Conflictions). Please go to {helpURL} for more information and workarounds.");
                 }
 
