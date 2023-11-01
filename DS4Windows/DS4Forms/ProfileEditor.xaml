@@ -1645,6 +1645,7 @@
                                                 <ComboBox Margin="8,0,0,0" SelectedIndex="{Binding SASteeringWheelEmulationRangeIndex,FallbackValue=0}">
                                                     <ComboBoxItem Content="90" />
                                                     <ComboBoxItem Content="180" />
+                                                    <ComboBoxItem Content="240" />
                                                     <ComboBoxItem Content="270" />
                                                     <ComboBoxItem Content="360" />
                                                     <ComboBoxItem Content="450" />
